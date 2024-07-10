@@ -1,0 +1,33 @@
+package OneToOne;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.time.format.DateTimeParseException;
+import java.util.Scanner;
+
+public class date 
+{
+	 public static void main(String[] args) {
+	        Scanner sc = new Scanner(System.in);
+
+	        System.out.println("Enter Aadhar Card Number:");
+	        long ad = sc.nextLong();
+	        
+	        System.out.println("Enter Date of Birth (yyyy-MM-dd):");
+	        sc.nextLine();  // Consume the remaining newline
+	        String user = sc.nextLine();
+
+	        DateTimeFormatter format = DateTimeFormatter.ofPattern("yyyy-MM-dd");
+
+	        try {
+	            LocalDate date = LocalDate.parse(user, format);
+	            System.out.println("Aadhar Card Number: " + ad);
+	            System.out.println("Date of Birth: " + date);
+	        } catch (DateTimeParseException e) {
+	            System.out.println("Invalid date format. Please enter the date in the format yyyy-MM-dd.");
+	        }
+
+	        sc.close();
+	    }
+
+}

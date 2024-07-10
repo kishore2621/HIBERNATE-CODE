@@ -1,0 +1,25 @@
+package ManyToOne;
+
+import java.util.*;
+
+import javax.persistence.*;
+
+public class Find_AnsweDataByAnswerArttribute 
+{
+	public static void main(String[] args) 
+	{
+		EntityManagerFactory emf=Persistence.createEntityManagerFactory("manytoone");
+		EntityManager em=emf.createEntityManager();
+		Query q=em.createQuery("select a from AnswerData where a.answer=1?");
+		q.setParameter(1, "time");
+		AnswerData la=(AnswerData) q.getSingleResult();
+		if(la.size()>0)
+		{
+			System.out.println(q);
+		}
+		else
+		{
+			System.out.println("Invalid answer");
+		}
+	}
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Employee.java&apos; to &apos;Hib_DeleteRecord/src/main/java/org.jsp.Delete&apos;&#x0D;&#x0A;- Original project: &apos;Hib_UpdateRecord&apos;&#x0D;&#x0A;- Destination element: &apos;Hib_DeleteRecord/src/main/java/org.jsp.Delete&apos;&#x0D;&#x0A;- Original element: &apos;org.jsp.Update.Employee.java&apos;" description="Copy compilation unit" destination="=Hib_DeleteRecord/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;org.jsp.Delete" element1="/src\/main\/java=/optional=/true=/=/maven.pomderived=/true=/&lt;org.jsp.Update{Employee.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1718111238924" units="1" version="1.0"/>
+</session>
